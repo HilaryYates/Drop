@@ -1,86 +1,91 @@
 body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-width: 100%;
-height: 100vh;
-background-image: linear-gradient(rgba(12, 3, 51, .3), rgba(12, 3, 51, .3));
-display: flex;
-position: relative;
-padding: 0 5%;
-align-items: center;
-justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  display: flex;
+  position: relative;
+  padding: 0 5%;
+  align-items: center;
+  justify-content: center;
 }
 
 .video-bg {
-	position: absolute;
-	right: 0;
-	bottom:  0;
-	z-index: -1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
-
 nav {
-	width: 70%;
-	position: absolute;
-	top: 0;
-	left:  0;
-	padding: 20px 8%;
-	display: flex;
-	align-items:  center;
-	justify-content: space-between;
+  width: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav .logo {
-	width: 4.5vh;
+  width: 4.5vh;
 }
 
 nav ul li {
-	list-style: none;
-	display: inline-block;
-	margin-left: 40px;
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
 }
 
 nav ul li a {
-	text-decoration: none;
-	color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 .content {
-	text-align: center;
+  text-align: center;
+  padding-right: 150px;
 }
 
 .content h1 {
-	color:  #fff;
-	font-size: 160px;
-	font-weight: 200;
-	margin:  0px;
+  color: #fff;
+  font-size: 150px;
+  margin: 0 auto;
+  font-weight: 300;
 }
 
 .content a {
-	text-decoration: none;
-	display: inline-block;
-	color: #fff;
-	font-size: 24px;
-	border: 2px solid #fff;
-	padding: 14px 70px;
-	border-radius: 50px;
-	margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  padding-right: 100px;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.content a:hover {
+  background-color: rgb(248, 175, 175);
 }
 
 @media (max-aspect-ratio: 16/10) {
-	.video-bg {
-		width:  100%;
-		height: auto;
-	}
+  .video-bg {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-aspect-ratio: 16/10) {
-	.video-bg {
-		width:  auto;
-		height: 100%;
-	}
+  .video-bg {
+    width: auto;
+    height: 100%;
+  }
 }
